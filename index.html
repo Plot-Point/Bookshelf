@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Bookshelf</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <p><a href="#">Bookshelf</a></p>
+    </div>
+</nav>
+<br><br><br><br><br><br><br>
+
+<!-- Bookshelf Section -->
+<hr>
+<div class="container" id="addBtn">
+    <h1>Finished</h1>
+    <a href="#" id="addBookBtnF">
+        <img src="https://th.bing.com/th/id/OIP._-qibhiwUrOT-Af_iDAJawHaHa?w=199&h=199&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Add Book" height="31">
+    </a>
+</div>
+<div class="container" id="finishedBookshelf">
+	<!-- Books will be added here -->
+</div>
+
+<hr>
+<div class="container" id="addBtn">
+    <h1>To Be Read</h1>
+    <a href="#" id="addBookBtnTBR">
+        <img src="https://th.bing.com/th/id/OIP._-qibhiwUrOT-Af_iDAJawHaHa?w=199&h=199&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Add Book" height="31">
+    </a>
+</div>
+<div class="container" id="tbrBookshelf">
+	<!-- Books will be added here -->
+</div>
+
+<hr>
+<div class="container" id="addBtn">
+    <h1>Did Not Finish</h1>
+    <a href="#" id="addBookBtnDNF">
+        <img src="https://th.bing.com/th/id/OIP._-qibhiwUrOT-Af_iDAJawHaHa?w=199&h=199&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Add Book" height="31">
+    </a>
+</div>
+<div class="container" id="dnfBookshelf">
+		<!-- Books will be added here -->
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add a New Book</h2>
+        <form id="bookForm">
+            <label for="bookTitle">Title:</label><br>
+            <input type="text" id="bookTitle" name="bookTitle" required><br>
+            <label for="bookAuthor">Author:</label><br>
+            <input type="text" id="bookAuthor" name="bookAuthor" required><br>
+            <label for="bookDescription">Description:</label><br>
+            <textarea id="bookDescription" name="bookDescription"></textarea><br>
+			<!--<input type="file" id="bookImage" accept="image/*"><br>
+			<img id="previewFinished" src="" alt="Image Preview" style="max-width: 300px; display: none;"> -->
+            <label for="bookImage">Image URL:</label><br>
+            <input type="url" id="bookImage" name="bookImage" required><br>
+            <label for="bookRating">Rating out of 5:</label><br>
+            <input type="text" id="bookRating" name="bookRating" required><br><br>
+            <input type="submit" value="Add Book">
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
