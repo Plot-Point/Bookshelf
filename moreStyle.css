@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 8em;
+  position: fixed;
+  line-height: 75px;
+  background-image: linear-gradient(#072A46, #0E314F);
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+nav .logo a {
+  padding-left: 1em;
+  padding-right: 12em;
+  padding-top: 0.25em;
+  float: left;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul{
+   padding-top: 0.75em;
+   float: right;
+}
+nav li{
+   display: inline-block;
+   list-style: none;
+}
+nav li a{
+   font-size: 15px;
+   text-transform: uppercase;
+   padding:0px 125px;
+   color: white;
+   text-decoration: none;
+}
+nav li a:hover{
+   color: #BED4F7;
+   transition: all 0.4s ease 0s;
+}
+
+#aditionalInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.moreBtn {
+  background-color: #072A46;
+  color: white;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 10px;
+  flex: 1 1 calc(30% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.moreBtn:hover {
+  color: #8EB1CE;
+  transition: all 0.4s ease 0s;
+}
+
+#addBtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+  padding: 20px; 
+  margin: 45px;  
+  display: inline-block;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  justify-content: center;
+  border-radius: 18px;
+}
