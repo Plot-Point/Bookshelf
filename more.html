@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Bookshelf</title>
+    <link href="moreStyle.css" rel="stylesheet"/>
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <p><a href="index.html">Bookshelf</a></p>
+    </div>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+    </ul>
+</nav>
+
+<br><br><br><br><br><br><br>
+
+<!-- Bookshelf Section -->
+<hr>
+<div class="container" id="addBtn">
+    <h1>Aditional Information</h1>
+    <a href="#" id="addInfoBtn">
+        <img src="https://th.bing.com/th/id/OIP._-qibhiwUrOT-Af_iDAJawHaHa?w=199&h=199&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Add Info" height="31">
+    </a>
+</div>
+<div class="container" id="aditionalInfo">
+		<!-- Books will be added here -->
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add More Info</h2>
+        <form id="infoForm">
+            <label for="bookTitle">Title:</label><br>
+            <input type="text" id="bookTitle" name="bookTitle" required><br>
+            <label for="bookAuthor">Author:</label><br>
+            <input type="text" id="bookAuthor" name="bookAuthor" required><br>
+            <label for="bookDescription">Description:</label><br>
+            <textarea id="bookDescription" name="bookDescription"></textarea><br>
+			<label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments"></textarea><br>
+            <input type="submit" value="Add Info">
+        </form>
+    </div>
+</div>
+
+<script src="moreScript.js"></script>
+</body>
+</html>
